@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="JmgjjPreliminary" Class="OrderDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.11.11.253;Initial Catalog=JmgjjPreliminary;User ID=sa" SettingsObjectName="GetOrder.Properties.Settings" SettingsPropertyName="JmgjjPreliminaryConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.A033PreFetch" Member="A033PreFetches">
+    <Type Name="A033PreFetch">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="responsNum" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="areaCode" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="aId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="uId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="account" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idCard" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="tel" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fetchType" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="fetchMoney" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="filePath" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="tsp" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Column Name="ondate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="editor" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="des" Type="System.String" DbType="NVarChar(200)" CanBeNull="true" />
+      <Column Name="edittime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="auditor" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="audittime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="isdel" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.View_PreUnitBusiness" Member="View_PreUnitBusinesses">
+    <Type Name="View_PreUnitBusiness">
+      <Column Name="uaccount" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="audittime" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="isdel" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="responsNum" Type="System.String" CanBeNull="false" />
+      <Column Name="areaCode" Type="System.Int32" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

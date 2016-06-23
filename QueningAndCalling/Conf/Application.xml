@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Connections>
+  <Appender name="WebBusinessSystem" type="SqlServer">
+    <Configuration connectionString="Data Source=10.11.11.253;Initial Catalog=JmgjjPreliminary;User ID=sa;Password=Hli12345" port="1433"></Configuration>
+  </Appender>
+  <Appender name="BookingSystem" type="Post">
+    <Configuration connectionString="" port=""></Configuration>
+  </Appender>
+</Connections>

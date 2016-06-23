@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Formlayout>
+    <Appender name="btn_grys" type="Button" >
+      <Configuration text="个人预审业务取号"></Configuration>
+    </Appender>
+    <Appender name="btn_dwys" type="Button" >
+      <Configuration text="单位预审业务取号"></Configuration>
+    </Appender>    
+</Formlayout> 

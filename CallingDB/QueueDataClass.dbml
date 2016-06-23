@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="queue" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=10.11.11.253;Initial Catalog=queue;User ID=sa" SettingsObjectName="CallingDB.Properties.Settings" SettingsPropertyName="queueConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Queue" Member="Queues">
+    <Type Name="Queue">
+      <Column Name="Q_Serial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Q_number" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Q_counter" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Q_cometime" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Q_mobile" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Q_issms" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.QueueHist" Member="QueueHists">
+    <Type Name="QueueHist">
+      <Column Name="H_Serial" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="H_number" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="H_counter" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="H_cometime" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="H_servetime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="H_serveno" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="H_endtime" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="H_isdo" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="H_issend" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
